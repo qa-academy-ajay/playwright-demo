@@ -2,7 +2,7 @@ import { expect, test } from '@playwright/test';
 
 async function login(username, password){
     await page.goto("https://rahulshettyacademy.com/loginpagePractise/");//navigate to URL
-    await page.pause();//pause execution and start playwright debugger
+    // await page.pause();//pause execution and start playwright debugger
     await page.locator("#username").fill("ajaykumar");//enter username in text box
     await page.locator("#username").fill('');//enter nothing to clear existing value from text box
     await page.locator("#username").fill(username);//enter text to textbox
