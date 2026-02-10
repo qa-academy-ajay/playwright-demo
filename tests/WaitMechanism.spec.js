@@ -1,4 +1,5 @@
 const { test, expect } = require('@playwright/test');
+
 test('Example: Wait for element enabled using waitForSelector() in Playwright.', async ({ page }) => {
     await page.goto('http://only-testing-blog.blogspot.com/2014/01/textbox.html');
     await page.waitForSelector('#submitButton:enabled', { timeout: 15000 });

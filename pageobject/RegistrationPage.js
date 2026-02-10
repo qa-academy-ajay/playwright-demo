@@ -15,8 +15,6 @@ class RegistrationPage {
         this.register_button = page.locator('#login');
     }
 
-    ///html/body/app-root/app-myorders/div[1]/h1
-
     async launchApplication(url) {
         await this.page.goto(url);
     }
@@ -25,7 +23,7 @@ class RegistrationPage {
 
         await this.firstName.fill("QA Academy");
         await this.lastName.fill("Ajay Kumar")
-        await this.userEmail.fill("qaacademyajay@gmail.com");
+        await this.userEmail.fill("qaacademyajay+2@gmail.com");
         await this.userMobile.fill("4375867364");
         await this.occupation.selectOption("Student");
         await this.gender_male.check();

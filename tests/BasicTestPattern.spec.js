@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
 
-test.only("how to use browser fixture", async ({ browser }) => {
+test("how to use browser fixture", async ({ browser }) => {
     const context = await browser.newContext();
     const page = await context.newPage();
     await page.goto("https://rahulshettyacademy.com/loginpagePractise/")
@@ -37,13 +37,16 @@ test("how to perform basic ui actions-1", async ({ page }) => {
             month_found = true;
         }
     }
-    const days = page.locator('.ui-datepicker-calendar a');
-    for (let i = 0; i < await days.count(); i++) {
-        if (await days.nth(i).textContent() == "28") {//how to use index
-            await days.nth(i).click()
-            break;
-        }
-    }
+    // const days = page.locator('.ui-datepicker-calendar a');
+    // for (let i = 0; i < await days.count(); i++) {
+    //     if (await days.nth(i).textContent() == "28") {//how to use index
+    //         await days.nth(i).click()
+    //         break;
+    //     }
+    // }
+
+    //OR
+    
     await page.locator('.ui-datepicker-calendar a:has-text("26")').click();
     await page.locator('#journeyClass .ui-dropdown').click();
     let jclass = 'First Class (FC)';
@@ -56,116 +59,122 @@ test("how to perform basic ui actions-1", async ({ page }) => {
 
 });
 
-// test("how to perform basic ui actions-2", async ({ page }) => {
-//     await page.goto("https://rahulshettyacademy.com/loginpagePractise/")//navigate to url
-//     await expect(page).toHaveTitle("LoginPage Practise | Rahul Shetty Academy");//verifying page title
+test("how to perform basic ui actions-2", async ({ page }) => {
+    await page.goto("https://rahulshettyacademy.com/loginpagePractise/")//navigate to url
+    await expect(page).toHaveTitle("LoginPage Practise | Rahul Shetty Academy");//verifying page title
 
-//     //textbox
-//     await page.locator("#username").fill("username");//providing correct username 
-//     await page.locator("[name='password']").fill("password");//providing incorrect password
-//     await page.locator("[name='password']").clear();//providing incorrect password
-//     await page.locator("[value='Sign In']").click();//click action performed
-//     await expect(page.locator("[style*='block']")).toHaveText("Incorrect username/password.")//full text validation
-//     // await expect(page.locator("[style*='block']")).toContainText("Incorrect");//partial text validation
-//     const username = await page.locator('p b i').nth(0).textContent();
-//     const password = await page.locator('p b i').nth(1).textContent();
-//     await page.locator("#username").fill(username);//providing correct username 
-//     await page.locator("[name='password']").fill(password);//providing correct password
+    //textbox
+    await page.locator("#username").fill("username");//providing correct username 
+    await page.locator("[name='password']").fill("password");//providing incorrect password
+    await page.locator("[name='password']").clear();//providing incorrect password
+    await page.locator("[name='password']").fill("password");//providing incorrect password
+    await page.locator("[value='Sign In']").click();//click action performed
+    await expect(page.locator("[style*='block']")).toHaveText("Incorrect username/password.")//full text validation
+    // await expect(page.locator("[style*='block']")).toContainText("Incorrect");//partial text validation
+    const username = await page.locator('p b i').nth(0).textContent();
+    const password = await page.locator('p b i').nth(1).textContent();
+    await page.locator("#username").fill(username);//providing correct username 
+    await page.locator("[name='password']").fill(password);//providing correct password
 
-//     await page.locator('.card-body:has-text("iphone 13 pro")').locator('i:has-text(" Add To Cart")');
-//     //radio button
-//     await expect(page.locator("[value='admin']")).toBeChecked();
-//     await page.check("[value='user']");
-//     await page.click("#okayBtn");
-//     await expect(page.locator("[value='user']")).toBeChecked();
-//     await page.locator('.radiotextsty:has-text("Admin")').click();//filtering locator based on text
+    await page.locator('.card-body:has-text("iphone 13 pro")').locator('i:has-text(" Add To Cart")');
+    //radio button
+    await expect(page.locator("[value='admin']")).toBeChecked();
+    await page.check("[value='user']");
+    await page.click("#okayBtn");
+    await expect(page.locator("[value='user']")).toBeChecked();
+    await page.locator('.radiotextsty:has-text("Admin")').click();//filtering locator based on text
 
-//     //dropdown
-//     await page.locator("select.form-control").selectOption("Teacher");
-//     await page.locator("select.form-control").selectOption("consult");
-//     await page.locator("select.form-control").selectOption({ label: "Student" });
-//     await page.locator("select.form-control").selectOption({ value: "teach" });
+    //dropdown
+    await page.locator("select.form-control").selectOption("Teacher");
+    await page.locator("select.form-control").selectOption("consult");
+    await page.locator("select.form-control").selectOption({ label: "Student" });
+    await page.locator("select.form-control").selectOption({ value: "teach" });
 
-//     //checkbox
-//     await page.locator('#terms').check();
-//     await expect(page.locator("#terms")).toBeChecked();
-//     await page.uncheck("#terms");
-//     expect(await page.locator("#terms").isChecked()).toBeFalsy();
-//     await expect(page.locator("#terms")).not.toBeChecked();
-//     await expect(page.locator("[href*='documents-request']")).toHaveAttribute('class', 'blinkingText')
+    //checkbox
+    await page.locator('#terms').check();
+    await expect(page.locator("#terms")).toBeChecked();
+    await page.uncheck("#terms");
+    expect(await page.locator("#terms").isChecked()).toBeFalsy();
+    await expect(page.locator("#terms")).not.toBeChecked();
+    await expect(page.locator("[href*='documents-request']")).toHaveAttribute('class', 'blinkingText')
 
-//     await page.locator("[value='Sign In']").click();//click action performed
-//     await expect(page).toHaveTitle("ProtoCommerce");
-// });
+    await page.locator("[value='Sign In']").click();//click action performed
+    await expect(page).toHaveTitle("ProtoCommerce");
+});
 
-// test("how to handle child window", async ({ browser }) => {
-//     const browser_context = await browser.newContext();
-//     const page1 = await browser_context.newPage();
-//     await page1.goto("https://rahulshettyacademy.com/loginpagePractise/");
+test("how to handle child window", async ({ browser }) => {
+    const browser_context = await browser.newContext();
+    const page1 = await browser_context.newPage();
+    await page1.goto("https://rahulshettyacademy.com/loginpagePractise/");
 
-//     let new_page_promis = browser_context.waitForEvent('page');
-//     await page1.locator("[href*='documents-request']").click()
-//     const new_page = await new_page_promis;
+    let new_page_promis = browser_context.waitForEvent('page');
+    await page1.locator("[href*='documents-request']").click()
+    const page2 = await new_page_promis;
 
-//     // const [new_page] = await Promise.all(
-//     //     [
-//     //         browser_context.waitForEvent('page'),
-//     //         await page1.locator("[href*='documents-request']").click()
-//     //     ]
-//     // )
+    // const [new_page] = await Promise.all(
+    //     [
+    //         browser_context.waitForEvent('page'),
+    //         await page1.locator("[href*='documents-request']").click()
+    //     ]
+    // )
 
-//     let msg = await new_page.locator('p.red').textContent();
-//     console.log(msg);
+    let text = await page2.locator('p.red').textContent();
+    console.log(text);
 
-//     let textArray = text.split("@");
-//     let usernameText = textArray[1].split(" ")[0];
+    let textArray = text.split("@");
+    let usernameText = textArray[1].split(" ")[0];
 
-//     await page.locator("#username").fill(usernameText);
-//     console.log(await page.locator("#username").inputValue());
+    await page1.locator("#username").fill(usernameText);
+    console.log(await page1.locator("#username").inputValue());
 
-// });
+});
 
-// test("special locators in playwright", async ({ page }) => {
-//     await page.goto("https://rahulshettyacademy.com/angularpractice/");
-//     await page.getByLabel("Check me out if you Love IceCreams!").click();
-//     await page.getByLabel("Student").check();
-//     await page.getByLabel("Gender").selectOption("Female");
+test("special locators in playwright", async ({ page }) => {
+    await page.goto("https://rahulshettyacademy.com/angularpractice/");
+    await page.getByLabel("Check me out if you Love IceCreams!").click();
+    await page.getByLabel("Student").check();
+    await page.getByLabel("Gender").selectOption("Female");
 
-//     await page.getByPlaceholder("Password").fill("username");
+    await page.getByPlaceholder("Password").fill("username");
 
-//     await page.getByRole('button', { name: "Submit" }).click();
+    await page.getByRole('button', { name: "Submit" }).click();
 
-//     expect(await page.getByText("Success! The Form has been submitted successfully!.").isVisible()).toBeTruthy();
+    expect(await page.getByText("Success! The Form has been submitted successfully!.").isVisible()).toBeTruthy();
 
-//     await page.getByRole('link', { name: "Shop" }).click();
+    await page.getByRole('link', { name: "Shop" }).click();
 
-//     await page.waitForLoadState('domcontentloaded');
-//     await page.locator("app-card").filter({ hasText: "Nokia Edge" }).getByRole("button").click();
-//     await page.pause();
-// })
+    await page.waitForLoadState('domcontentloaded');
+    await page.locator("app-card").filter({ hasText: "Nokia Edge" }).getByRole("button").click();
+    await page.pause();
+})
 
-// test("Verify user is able to complete new registration", async ({ page }) => {
+test("Verify user is able to complete new registration", async ({ page }) => {
 
-//     await page.goto('https://rahulshettyacademy.com/client/#/auth/register');
-//     await username.fill("QA Academy");
-//     await password.fill("Ajay Kumar")
-//     await email.fill("qaacademyajay@gmail.com");
-//     await  mobile.fill("4375867364");
-//     await occupation.selectOption("Student");
-//     await page.selectOption('.custom-select', "Student")
-//     // await page.locator('[value="Male"]').check();
-//     await page.locator('#userPassword').fill("Password@123");
-//     await page.locator('#confirmPassword').fill("Password@123");
-//     await page.locator('[type="checkbox"]').check();
-//     await page.locator('#login').click();
-//     await expect(page.locator('h1.headcolor')).toHaveText("Account Created Successfully");
-// })
+    await page.goto('https://rahulshettyacademy.com/client/#/auth/register');
+    const firstName = page.locator('#firstName');
+    const lastName = page.locator('#lastName');
+    const userEmail = page.locator('#userEmail');
+    const userMobile = page.locator('#userMobile');
+    const occupation = page.locator('.custom-select');
+    await firstName.fill("QA Academy");
+    await lastName.fill("Ajay Kumar")
+    await userEmail.fill("qaacademyajay+1@gmail.com");
+    await userMobile.fill("4375867364");
+    await occupation.selectOption("Student");
+    await page.selectOption('.custom-select', "Student")
+    // await page.locator('[value="Male"]').check();
+    await page.locator('#userPassword').fill("Password@123");
+    await page.locator('#confirmPassword').fill("Password@123");
+    await page.locator('[type="checkbox"]').check();
+    await page.locator('#login').click();
+    await expect(page.locator('h1.headcolor')).toHaveText("Account Created Successfully");
+})
 
-// test("Verify same user gets error msg while trying to register multiple time", async({page})=>{
+test("Verify same user gets error msg while trying to register multiple time", async ({ page }) => {
 
-// }
+}
 
-// )
+)
 
 
 test("Verify user is able to order any product successfuly", async ({ page }) => {
@@ -245,16 +254,8 @@ test("TC02", async ({ page }) => {
 
     await page.locator('#login').click();
 
-    await page.waitForEvent('popup');
-    
-    page.on('dialog',async dialog => {
-        console.log(dialog.message())
-        await page.evaluate(() => alert('  email or psword. '));
-        expect(dialog.message()).toEqual(' Incorrect email or psword. ',);
-        
-    })
     //assertion, validation
-    // await expect(page.locator('div[role="alert"]')).toHaveText(' Incorrect email or password. ');
+    await expect(page.locator('div[role="alert"]')).toHaveText(' Incorrect email or password. ');
 })
 
 test("TC03", async ({ page }) => {
@@ -275,12 +276,6 @@ test("TC04", async ({ page }) => {
 
     //assertion, validation
     await expect(page.locator('div[role="alert"]')).toHaveText(' Incorrect email or password. ');
-
-
-    await expect(page.locator('.hero-primary')).toHaveText(' Thankyou for the order. ')
-
-    const orderid = page.locator('table[align="center"] tr').last().locator("lable").textContent();
-
 })
 
 
