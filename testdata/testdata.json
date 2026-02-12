@@ -1,0 +1,49 @@
+{
+    "@TC01": {
+        "firstname": "QA1",
+        "lastname": "Academy",
+        "email": "qaacademyajay+2@gmail.com",
+        "mobile": "4375867364",
+        "occupation": "Student",
+        "gender": "male",
+        "password": "Password@123"
+    },
+    "@TC02": [
+        {
+            "firstname": "QA1",
+            "lastname": "Academy",
+            "email": "qaacademyajay+3@gmail.com",
+            "mobile": "4375867364",
+            "occupation": "Student",
+            "gender": "male",
+            "password": "Password@123"
+        },
+        {
+            "firstname": "QA2",
+            "lastname": "Academy",
+            "email": "qaacademyajay+4@gmail.com",
+            "mobile": "4375867364",
+            "occupation": "Student",
+            "gender": "male",
+            "password": "Password@123"
+        },
+        {
+            "firstname": "QA3",
+            "lastname": "Academy",
+            "email": "qaacademyajay+5@gmail.com",
+            "mobile": "4375867364",
+            "occupation": "Student",
+            "gender": "male",
+            "password": "Password@123"
+        }
+    ],
+    "@TC03": {
+        "firstname": "QA3",
+        "lastname": "Academy",
+        "email": "qaacademyajay+2@gmail.com",
+        "mobile": "4375867364",
+        "occupation": "Student",
+        "gender": "male",
+        "password": "Password@123"
+    }
+}

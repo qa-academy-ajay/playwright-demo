@@ -46,7 +46,7 @@ test("how to perform basic ui actions-1", async ({ page }) => {
     // }
 
     //OR
-    
+
     await page.locator('.ui-datepicker-calendar a:has-text("26")').click();
     await page.locator('#journeyClass .ui-dropdown').click();
     let jclass = 'First Class (FC)';
@@ -176,6 +176,11 @@ test("Verify same user gets error msg while trying to register multiple time", a
 
 )
 
+const obj = {
+    username : "ajaykr.mailbox@gmail.com",
+     password : "Automation@123",
+     product_name: "iphone 13 pro"
+}
 
 test("Verify user is able to order any product successfuly", async ({ page }) => {
     const username = "ajaykr.mailbox@gmail.com";
@@ -183,8 +188,8 @@ test("Verify user is able to order any product successfuly", async ({ page }) =>
     const product_name = "iphone 13 pro";
     let price = "";
     await page.goto('https://rahulshettyacademy.com/client/#/auth/login')
-    await page.locator('#userEmail').fill(username);
-    await page.locator('#userPassword').fill(password);
+    await page.locator('#userEmail').fill(obj.username);
+    await page.locator('#userPassword').fill(obj.password);
     await page.locator('#login').click();
 
     const card_body = page.locator('div.card-body');
@@ -193,7 +198,7 @@ test("Verify user is able to order any product successfuly", async ({ page }) =>
     await card_body.first().waitFor({ state: 'attached' });
 
     for (let i = 0; i < await card_body.count(); i++) {
-        if (await card_body.nth(i).locator('b').textContent() == product_name) {
+        if (await card_body.nth(i).locator('b').textContent() == obj.product_name) {
             price = await card_body.nth(i).locator('.text-muted').textContent();//$ 55000
             price = price.replaceAll(" ", "");//$55000
             await card_body.nth(i).locator('button:has-text("Cart")').click();
@@ -277,6 +282,7 @@ test("TC04", async ({ page }) => {
     //assertion, validation
     await expect(page.locator('div[role="alert"]')).toHaveText(' Incorrect email or password. ');
 })
+
 
 
 

@@ -1,0 +1,30 @@
+[
+  {
+    "sit": {
+      "baseURL": "https://rahulshettyacademy.com",
+      "user": "qaUser",
+      "env": [
+        "sit",
+        "uat"
+      ]
+    },
+    "uat": {
+      "baseURL": "https://rahulshettyacademy.com",
+      "user": "uatUser"
+    }
+  },
+  {
+    "sit": {
+      "baseURL": "https://rahulshettyacademy.com",
+      "user": "qaUser",
+      "env": [
+        "sit",
+        "uat"
+      ]
+    },
+    "uat": {
+      "baseURL": "https://rahulshettyacademy.com",
+      "user": "uatUser"
+    }
+  }
+]

@@ -1,6 +1,6 @@
-// @ts-check
+// @ts-ignore
 import { defineConfig, devices } from '@playwright/test';
-
+const config = require('./testdata/config.json');
 /**
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
@@ -32,10 +32,10 @@ export default defineConfig({
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
     // baseURL: 'http://localhost:3000',
-
-    /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
+    // baseURL: config[process.env.ENV ? 'uat' : 'sit'].baseURL,
+    /* Collect tracer when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'off',
-    headless: true,
+    headless: false,
     screenshot: 'off'
   },
 
