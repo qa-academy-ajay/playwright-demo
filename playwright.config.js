@@ -1,6 +1,6 @@
 // @ts-ignore
 import { defineConfig, devices } from '@playwright/test';
-const config = require('./testdata/config.json');
+import { env } from './config/env.js';
 /**
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
@@ -28,16 +28,20 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: 'html',
+  
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
-    // baseURL: 'http://localhost:3000',
-    // baseURL: config[process.env.ENV ? 'uat' : 'sit'].baseURL,
+    // baseURL: 'https://rahulshettyacademy.com',
+    // baseURL: env.baseURL,
     /* Collect tracer when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'off',
     headless: false,
-    screenshot: 'off'
+    screenshot: 'off',
+    // storageState: 'flipkart_auth.json'
+    
   },
+  
 
   /* Configure projects for major browsers */
   projects: [
@@ -70,6 +74,7 @@ export default defineConfig({
     {
       name: 'Microsoft Edge',
       use: { ...devices['Desktop Edge'], channel: 'msedge' },
+      
     },
     // {
     //   name: 'Google Chrome',
