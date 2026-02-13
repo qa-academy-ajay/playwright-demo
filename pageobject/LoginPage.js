@@ -1,26 +1,21 @@
-
 class LoginPage {
 
     constructor(page) {
         this.page = page;
-        this.userEmail = page.locator('#userEmail');
-        this.userPassword = page.locator('#userPassword');
-        this.loginBtn = page.locator('#login');
+        this.username = page.locator("#userEmail");
+        this.password = page.locator("#userPassword");
+        this.loginBtuun = page.locator("[name='login']");
     }
-
     async launchApplication(url) {
         await this.page.goto(url);
     }
 
     async userLogin(username, password) {
-    await userEmail.fill(username);
-    await userPassword.fill(password);
-    await loginBtn.click();
+        await this.username.fill(username);
+        await this.password.fill(password);
+        await this.loginBtuun.click();
+    }
 
 }
 
-}
-
-// module.exports = { RegistrationPage };
-
-export { LoginPage }
+export { LoginPage };

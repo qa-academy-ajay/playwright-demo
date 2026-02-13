@@ -1,12 +1,10 @@
 {
-    "@TC01": {
-        "firstname": "QA1",
-        "lastname": "Academy",
-        "email": "qaacademyajay+2@gmail.com",
-        "mobile": "4375867364",
-        "occupation": "Student",
-        "gender": "male",
-        "password": "Password@123"
+    "Order Product": {
+        "username": "ajaykr.mailbox@gmail.com",
+        "password": "Automation@123",
+        "product_name": "iphone 13 pro",
+        "country": "India"
+       
     },
     "@TC02": [
         {

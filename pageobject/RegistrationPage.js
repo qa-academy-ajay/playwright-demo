@@ -35,6 +35,4 @@ class RegistrationPage {
 
 }
 
-// module.exports = { RegistrationPage };
-
 export {RegistrationPage}
