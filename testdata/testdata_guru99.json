@@ -1,0 +1,21 @@
+{
+    "@TC01": {
+        "username": "mngr654230",
+        "password": "AveverE",
+        "price": 5435
+    },
+    "@TC02": [
+        {
+            "username": "mngr65",
+            "password": "AveverE1"
+        },
+        {
+            "username": "mngr6542",
+            "password": "AveverE2"
+        },
+        {
+            "username": "mngr654230",
+            "password": "AveverE3"
+        }
+    ]
+}

@@ -1,7 +1,11 @@
 import { test, expect } from "@playwright/test";
 
 import { PageObjectManager } from '../pageobject/PageObjectManager';
+
 import testdata from '../testdata/testdata.json'
+// import { LoginPage } from "../pageobject/LoginPage";
+// import { Homepage } from "../pageobject/HomePage";
+// import { NewCustPage } from "../pageobject/NewCustPage";
 
 test.only("Order Product", async ({ page }) => {
     const data = testdata['Order Product'];
@@ -13,4 +17,20 @@ test.only("Order Product", async ({ page }) => {
     await pageObjectManager.getCheckoutPage().placeOrder();
     const generatedOrder = await pageObjectManager.getConfirmationPage().verifyOrder();
     await pageObjectManager.getOrderHistoryPage().verifyOrderHistory(data.product_name, generatedOrder);
+})
+
+test("add new customer", async({page})=>{
+
+    const data = testdata['@TC04'];
+    const pom = new PageObjectManager(page);
+
+    await pom.getLoginPage().launchApplication('https://demo.guru99.com/V4/');
+    await pom.getLoginPage().userLogin(data.username, data.password);
+    await pom.getHomepage().navigateToNewCust();
+    await page.pause()
+    await pom.getNewCustPage().addNewCustomer();
+
+
+
+
 })

@@ -27,7 +27,7 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  reporter: [['html'], ['allure-playwright']],
   
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
@@ -35,9 +35,9 @@ export default defineConfig({
     // baseURL: 'https://rahulshettyacademy.com',
     // baseURL: env.baseURL,
     /* Collect tracer when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'off',
+    trace: 'on-first-retry',
     headless: false,
-    screenshot: 'off',
+    screenshot: 'only-on-failure',
     // storageState: 'flipkart_auth.json'
     
   },

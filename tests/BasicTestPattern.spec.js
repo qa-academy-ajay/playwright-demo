@@ -4,6 +4,9 @@ test("how to use browser fixture", async ({ browser }) => {
     const context = await browser.newContext();
     const page = await context.newPage();
     await page.goto("https://rahulshettyacademy.com/loginpagePractise/")
+    await page.screenshot({path: 'screenshot/image.png'})
+    await page.locator("#username").screenshot({path: 'usernmae.png'});
+
     let title = await page.title();
     await expect(page).toHaveTitle("LoginPage Practise | Rahul Shetty Academy");
 });
@@ -177,9 +180,9 @@ test("Verify same user gets error msg while trying to register multiple time", a
 )
 
 const obj = {
-    username : "ajaykr.mailbox@gmail.com",
-     password : "Automation@123",
-     product_name: "iphone 13 pro"
+    username: "ajaykr.mailbox@gmail.com",
+    password: "Automation@123",
+    product_name: "iphone 13 pro"
 }
 
 test("Verify user is able to order any product successfuly", async ({ page }) => {

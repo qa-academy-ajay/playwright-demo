@@ -4,7 +4,6 @@
         "password": "Automation@123",
         "product_name": "iphone 13 pro",
         "country": "India"
-       
     },
     "@TC02": [
         {
@@ -43,5 +42,9 @@
         "occupation": "Student",
         "gender": "male",
         "password": "Password@123"
+    },
+    "@TC04": {
+        "username": "mngr654230",
+        "password": "AveverE"
     }
 }

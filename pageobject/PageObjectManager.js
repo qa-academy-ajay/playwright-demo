@@ -10,6 +10,8 @@ class PageObjectManager {
     constructor(page) {
         this.page = page;
         this.loginPage = new LoginPage(page);
+        this.homepage = new Homepage(page);
+        this.newCustPage = new NewCustPage(page);
         this.dashboardPage = new DashboardPage(page);
         this.cartPage = new CartPage(page);
         this.checkoutPage = new CheckoutPage(page);
@@ -37,4 +39,4 @@ class PageObjectManager {
     }
 }
 
-export {PageObjectManager};
+export { PageObjectManager };
