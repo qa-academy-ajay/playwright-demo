@@ -1,0 +1,128 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - text:             
+  - navigation [ref=e2]:
+    - link "PRODUCT STORE" [ref=e3] [cursor=pointer]:
+      - /url: index.html
+      - img [ref=e4]
+      - text: PRODUCT STORE
+    - list [ref=e6]:
+      - listitem [ref=e7]:
+        - link "Home (current)" [ref=e8] [cursor=pointer]:
+          - /url: index.html
+          - text: Home
+          - generic [ref=e9]: (current)
+      - listitem [ref=e10]:
+        - link "Contact" [ref=e11] [cursor=pointer]:
+          - /url: "#"
+      - listitem [ref=e12]:
+        - link "About us" [ref=e13] [cursor=pointer]:
+          - /url: "#"
+      - listitem [ref=e14]:
+        - link "Cart" [ref=e15] [cursor=pointer]:
+          - /url: cart.html
+      - listitem
+      - listitem [ref=e16]:
+        - link "Log out" [ref=e17] [cursor=pointer]:
+          - /url: "#"
+      - listitem [ref=e18]:
+        - link "Welcome qaacademy" [ref=e19] [cursor=pointer]:
+          - /url: "#"
+      - listitem
+    - generic [ref=e21]:
+      - list [ref=e22]:
+        - listitem [ref=e23] [cursor=pointer]
+        - listitem [ref=e24] [cursor=pointer]
+        - listitem [ref=e25] [cursor=pointer]
+      - img "Third slide" [ref=e28]
+      - button "Previous" [ref=e29] [cursor=pointer]:
+        - generic [ref=e31]: Previous
+      - button "Next" [ref=e32] [cursor=pointer]:
+        - generic [ref=e34]: Next
+  - generic [ref=e36]:
+    - generic [ref=e38]:
+      - link "CATEGORIES" [ref=e39] [cursor=pointer]:
+        - /url: ""
+      - link "Phones" [ref=e40] [cursor=pointer]:
+        - /url: "#"
+      - link "Laptops" [ref=e41] [cursor=pointer]:
+        - /url: "#"
+      - link "Monitors" [ref=e42] [cursor=pointer]:
+        - /url: "#"
+    - generic [ref=e43]:
+      - generic [ref=e44]:
+        - generic [ref=e46]:
+          - link [ref=e47] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e48]:
+            - heading "Apple monitor 24" [level=4] [ref=e49]:
+              - link "Apple monitor 24" [ref=e50] [cursor=pointer]:
+                - /url: prod.html?idp_=10
+            - heading "$400" [level=5] [ref=e51]
+            - paragraph [ref=e52]: LED Cinema Display features a 27-inch glossy LED-backlit TFT active-matrix LCD display with IPS technology and an optimum resolution of 2560x1440. It has a 178 degree horizontal and vertical viewing angle, a "typical" brightness of 375 cd/m2, contrast ratio of 1000:1, and a 12 ms response time.
+        - generic [ref=e54]:
+          - link [ref=e55] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e56]:
+            - heading "MacBook air" [level=4] [ref=e57]:
+              - link "MacBook air" [ref=e58] [cursor=pointer]:
+                - /url: prod.html?idp_=11
+            - heading "$700" [level=5] [ref=e59]
+            - paragraph [ref=e60]: 1.6GHz dual-core Intel Core i5 (Turbo Boost up to 2.7GHz) with 3MB shared L3 cache Configurable to 2.2GHz dual-core Intel Core i7 (Turbo Boost up to 3.2GHz) with 4MB shared L3 cache.
+        - generic [ref=e62]:
+          - link [ref=e63] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e64]:
+            - heading "Dell i7 8gb" [level=4] [ref=e65]:
+              - link "Dell i7 8gb" [ref=e66] [cursor=pointer]:
+                - /url: prod.html?idp_=12
+            - heading "$700" [level=5] [ref=e67]
+            - paragraph [ref=e68]: 6th Generation Intel Core i7-6500U Dual-Core Processor 2.5 GHz (max boost speed up to 3.1GHz) 4MB L3 Cache, 8GB DDR4 1600 MHz, 1TB 5400 RPM HDD15.6 in Full HD LED-backlit touchscreen with Truelife (1920 x 1080), 10-finger multi-touch support, Intel HD Graphics 520 with shared graphics memory
+        - generic [ref=e70]:
+          - link [ref=e71] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e72]:
+            - heading "2017 Dell 15.6 Inch" [level=4] [ref=e73]:
+              - link "2017 Dell 15.6 Inch" [ref=e74] [cursor=pointer]:
+                - /url: prod.html?idp_=13
+            - heading "$700" [level=5] [ref=e75]
+            - paragraph [ref=e76]: 7th Gen Intel Core i7-7500U mobile processor 2.70 GHz with Turbo Boost Technology up to 3.50 GHz, Intel HD Graphics 62015.6 inch Full HD IPS TrueLife LED-backlit touchscreen (1920 x 1080), 10-finger multi-touch support, 360° flip-and-fold design,8GB DDR4 2400 MHz Memory, 1TB 5400 RPM HDD, No optical drive, 3 in 1 card reader (SD SDHC SDXC)
+        - generic [ref=e78]:
+          - link [ref=e79] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e80]:
+            - heading "ASUS Full HD" [level=4] [ref=e81]:
+              - link "ASUS Full HD" [ref=e82] [cursor=pointer]:
+                - /url: prod.html?idp_=14
+            - heading "$230" [level=5] [ref=e83]
+            - paragraph [ref=e84]: ASUS VS247H-P 23.6- Inch Full HD
+        - generic [ref=e86]:
+          - link [ref=e87] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e88]:
+            - heading "MacBook Pro" [level=4] [ref=e89]:
+              - link "MacBook Pro" [ref=e90] [cursor=pointer]:
+                - /url: prod.html?idp_=15
+            - heading "$1100" [level=5] [ref=e91]
+            - paragraph [ref=e92]: Apple has introduced three new versions of its MacBook Pro line, including a 13-inch and 15-inch model with the Touch Bar, a thin, multi-touch strip display that sits above the MacBook Pro's keyboard.
+      - list [ref=e94]:
+        - listitem [ref=e95]:
+          - button "Previous" [ref=e96]
+        - listitem
+  - generic [ref=e98]:
+    - generic [ref=e101]:
+      - heading "About Us" [level=4] [ref=e102]
+      - paragraph [ref=e103]: We believe performance needs to be validated at every stage of the software development cycle and our open source compatible, massively scalable platform makes that a reality.
+    - generic [ref=e106]:
+      - heading "Get in Touch" [level=4] [ref=e107]
+      - paragraph [ref=e108]: "Address: 2390 El Camino Real"
+      - paragraph [ref=e109]: "Phone: +440 123456"
+      - paragraph [ref=e110]: "Email: demo@blazemeter.com"
+    - heading "PRODUCT STORE" [level=4] [ref=e114]:
+      - img [ref=e115]
+      - text: PRODUCT STORE
+  - contentinfo [ref=e116]:
+    - paragraph [ref=e117]: Copyright © Product Store
+```

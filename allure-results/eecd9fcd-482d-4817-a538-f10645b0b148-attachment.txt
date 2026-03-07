@@ -1,0 +1,6 @@
+{
+  apiURL: 'https://api-qa.company.com',
+  baseURL: 'https://qa.company.com',
+  password: 'qa_password',
+  username: 'AjayKumar'
+}

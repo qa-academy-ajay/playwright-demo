@@ -1,0 +1,6 @@
+{
+  apiURL: 'https://api-stage.company.com',
+  baseURL: 'https://stage.company.com',
+  password: 'stage_password',
+  username: 'AjayKumar'
+}

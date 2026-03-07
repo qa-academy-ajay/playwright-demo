@@ -1,0 +1,11 @@
+Promise {
+  {
+    firstname: 'QA3',
+    lastname: 'Academy',
+    email: 'qaacademyajay+2gmail.com',
+    mobile: '4375867364',
+    occupation: 'Student',
+    gender: 'male',
+    password: 'Password123'
+  }
+}

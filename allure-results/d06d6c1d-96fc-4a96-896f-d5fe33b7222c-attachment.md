@@ -1,0 +1,586 @@
+# Page snapshot
+
+```yaml
+- generic:
+  - generic:
+    - list
+    - region "Notifications alt+T"
+    - generic:
+      - navigation:
+        - generic:
+          - generic:
+            - generic:
+              - link:
+                - /url: /
+                - text: RAHUL SHETTY
+            - generic:
+              - link:
+                - /url: /all-access-subscription
+                - img
+                - text: All-Access
+              - link:
+                - /url: /learning-paths
+                - img
+                - text: Learning Paths
+              - link:
+                - /url: /mentorship
+                - img
+                - text: Mentorship
+              - link:
+                - /url: /ai-learning-path
+                - img
+                - text: AI Learning Path
+                - generic: NEW
+              - link:
+                - /url: /practice
+                - img
+                - text: Practice
+              - link:
+                - /url: https://qasummit.org
+                - img
+                - text: Meet ups
+              - button:
+                - img
+                - text: Contact Us
+                - img
+            - generic:
+              - link:
+                - /url: https://courses.rahulshettyacademy.com/sign_up
+                - text: Sign Up
+              - link:
+                - /url: https://courses.rahulshettyacademy.com/courses
+                - text: Browse Courses
+      - main:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic: Trusted by 1 Million+ Students
+                  - heading [level=1]:
+                    - text: An Academy to Learn & Shine in your
+                    - generic: QA/AI Career.
+                  - paragraph: World-class tutorials on Playwright, AI Testing, Selenium, ISTQB, API Testing, Postman, Cypress, Appium, Cucumber, SoapUI, JMeter, Jira, and many more. Join our courses now to get the best job opportunity.
+                - generic:
+                  - link:
+                    - /url: https://courses.rahulshettyacademy.com/sign_up
+                    - text: JOIN NOW
+                  - link:
+                    - /url: /learning-paths
+                    - text: Browse Learning Paths
+                - generic:
+                  - generic:
+                    - generic: 1Million+
+                    - generic: Students
+                  - generic:
+                    - generic: "195"
+                    - generic: Countries
+                  - generic:
+                    - generic: 40+
+                    - generic: Courses
+                  - generic:
+                    - generic: 100%
+                    - generic: Job Ready
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic: 🚀
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ⚡
+                              - generic: Test Automation
+                        - generic:
+                          - generic:
+                            - generic: TESTING ACADEMY
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: 🤖
+                              - generic: Gen AI Learning
+                    - generic:
+                      - generic: Selenium
+                      - generic: Cypress
+                      - generic: AI Testing
+                      - generic: Playwright
+                      - generic: Agentic AI
+                      - generic: API Testing
+                      - generic: Performance
+                      - generic: Software Testing
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic: Meet Your Instructor
+                  - heading [level=2]: Hi, I'm Rahul Shetty.
+                  - paragraph: I've had the privilege of guiding over 1 million QA professionals to achieve their career dreams. As one of Udemy's most successful QA instructors, I've spent years simplifying complex concepts into practical, real-world lessons that anyone can follow.
+                  - paragraph: "My mission is simple: to help you become job-ready, future-ready, and confident in tackling modern testing challenges — from automation frameworks to AI-powered QA workflows. Whether you're starting fresh or aiming to scale higher in your career, I'm here to mentor you every step of the way."
+                - generic:
+                  - link:
+                    - /url: https://qasummit.org/about-speaker
+                    - text: Check my Portfolio
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+                    - generic:
+                      - generic: ✓ Test Automation
+                      - generic: Master Level
+        - generic:
+          - generic:
+            - generic:
+              - generic: Skills & Benefits
+              - heading [level=2]: Learn the skills companies hire for
+              - paragraph: From Selenium and Playwright to AI‑powered test agents and data validations, Learn end‑to‑end, Job‑ready courses with real time projects handson.
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+                  - heading [level=3]: Lifetime Access
+                  - paragraph: Lifetime access to all course materials. Learn at your own pace and updates are free for life. No time restrictions.
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+                  - heading [level=3]: Mentor-first Teaching
+                  - paragraph: Clear explanations, simple mental models, and community support to keep you moving.
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+                  - heading [level=3]: Hands-on Frameworks
+                  - paragraph: Design real automation frameworks with CI/CD, reporting, and best practices.
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+                  - heading [level=3]: Career-Focused
+                  - paragraph: Interview prep, project templates, and resume-ready case studies built in.
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+                  - heading [level=3]: Multi-Stack Tools
+                  - paragraph: Selenium, Playwright, Cypress, API, ETL/Data – pick your stack and go deep.
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+                  - heading [level=3]: AI Testing
+                  - paragraph: Leverage LLMs, MCP, and agents to auto-generate tests, triage defects, and evaluate quality.
+        - generic:
+          - generic:
+            - generic:
+              - generic: Featured Courses
+              - heading [level=2]: Master the latest testing technologies
+              - paragraph: with our most popular courses
+            - generic:
+              - generic:
+                - generic:
+                  - img
+                  - generic:
+                    - generic: Best Seller
+                  - generic:
+                    - img
+                - generic:
+                  - heading [level=3]: Selenium WebDriver with Java - Basics to Advanced
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: "4.8"
+                      - generic: (45,123)
+                  - generic: 125,000 students enrolled
+                  - generic:
+                    - generic:
+                      - generic: $18.99
+                      - generic: $199.99
+                    - button: Enroll Now
+              - generic:
+                - generic:
+                  - img
+                  - generic:
+                    - generic: Best Seller
+                  - generic:
+                    - img
+                - generic:
+                  - heading [level=3]: Rest API Automation Testing - Rest Assured Java
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: "4.7"
+                      - generic: (32,451)
+                  - generic: 98,000 students enrolled
+                  - generic:
+                    - generic:
+                      - generic: $18.99
+                      - generic: $149.99
+                    - button: Enroll Now
+              - generic:
+                - generic:
+                  - img
+                  - generic:
+                    - generic: Best Seller
+                  - generic:
+                    - img
+                - generic:
+                  - heading [level=3]: Learn GenAI Tools & AI Agents for Software Testing
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: "4.9"
+                      - generic: (28,765)
+                  - generic: 87,000 students enrolled
+                  - generic:
+                    - generic:
+                      - generic: $18.99
+                      - generic: $179.99
+                    - button: Enroll Now
+              - generic:
+                - generic:
+                  - img
+                  - generic:
+                    - generic: Best Seller
+                  - generic:
+                    - img
+                - generic:
+                  - heading [level=3]: Playwright with JavaScript - Complete Course
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: "4.8"
+                      - generic: (15,432)
+                  - generic: 54,000 students enrolled
+                  - generic:
+                    - generic:
+                      - generic: $18.99
+                      - generic: $199.99
+                    - button: Enroll Now
+              - generic:
+                - generic:
+                  - img
+                  - generic:
+                    - generic: Best Seller
+                  - generic:
+                    - img
+                - generic:
+                  - heading [level=3]: Playwright PYTHON Automation Testing - From Zero to Expert
+                  - generic:
+                    - generic:
+                      - img
+                      - generic: "4.6"
+                      - generic: (22,134)
+                  - generic: 67,000 students enrolled
+                  - generic:
+                    - generic:
+                      - generic: $18.99
+                      - generic: $129.99
+                    - button: Enroll Now
+            - generic:
+              - link:
+                - /url: https://courses.rahulshettyacademy.com/courses
+                - text: View More Courses
+        - generic:
+          - generic:
+            - generic:
+              - heading [level=2]: Ready to Transform Your QA Career?
+              - paragraph: Join thousands of successful professionals who have elevated their careers with our comprehensive testing courses.
+              - generic:
+                - link:
+                  - /url: /all-access-subscription
+                  - img
+                  - text: All Access Membership
+                  - img
+                - link:
+                  - /url: /learning-paths
+                  - img
+                  - text: Explore QA & AI Learning Paths
+              - generic:
+                - link:
+                  - /url: https://courses.rahulshettyacademy.com/courses
+                  - img
+                  - text: Explore Individual (All) Courses
+                - link:
+                  - /url: "#exclusive-academy"
+                  - img
+                  - text: Join the Community
+        - generic:
+          - generic:
+            - generic:
+              - generic: Success Stories
+              - heading [level=2]: Learner success stories
+              - paragraph: Real outcomes from real learners worldwide.
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+                    - generic:
+                      - img
+                      - img
+                      - img
+                      - img
+                      - img
+                  - paragraph: "\"Rahul's courses completely transformed my career. The practical approach and real-world projects helped me land my dream job at Microsoft. The AI testing module was particularly impressive!\""
+                  - generic:
+                    - heading [level=4]: Sarah Johnson
+                    - paragraph: QA Engineer at Microsoft
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+                    - generic:
+                      - img
+                      - img
+                      - img
+                      - img
+                      - img
+                  - paragraph: "\"Best investment I've made for my career. The Selenium and Playwright courses are incredibly detailed. Went from manual testing to automation lead in 6 months!\""
+                  - generic:
+                    - heading [level=4]: Michael Chen
+                    - paragraph: Senior Test Automation Engineer
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+                    - generic:
+                      - img
+                      - img
+                      - img
+                      - img
+                      - img
+                  - paragraph: "\"The comprehensive curriculum and lifetime access made all the difference. I now manage a team of 15 QA engineers. Thank you for the excellent training!\""
+                  - generic:
+                    - heading [level=4]: Priya Sharma
+                    - paragraph: QA Manager at Amazon
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+                    - generic:
+                      - img
+                      - img
+                      - img
+                      - img
+                      - img
+                  - paragraph: "\"Rahul's teaching style is exceptional. The API testing and performance testing modules helped me transition to a Test Architect role. Highly recommend!\""
+                  - generic:
+                    - heading [level=4]: David Wilson
+                    - paragraph: Test Architect at Google
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+                    - generic:
+                      - img
+                      - img
+                      - img
+                      - img
+                      - img
+                  - paragraph: "\"The courses are updated regularly with latest technologies. Started my own QA consulting business after completing the full stack testing program.\""
+                  - generic:
+                    - heading [level=4]: Lisa Rodriguez
+                    - paragraph: Senior QA Consultant
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+                    - generic:
+                      - img
+                      - img
+                      - img
+                      - img
+                      - img
+                  - paragraph: "\"From zero to hero in automation testing. The mentorship program was invaluable. Now leading automation initiatives at Netflix!\""
+                  - generic:
+                    - heading [level=4]: Ahmed Hassan
+                    - paragraph: Lead QA Engineer at Netflix
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - img
+                - text: Exclusive Academy Access
+              - heading [level=2]: JOIN OUR ACADEMY
+              - paragraph: Transform your career with our comprehensive learning platform. Get instant access to below 2 Premium courses for Free, QA Job openings, Premium Monthly AI & Testing Insights Newsletter and join a community of successful QA professionals.
+              - generic:
+                - generic:
+                  - img
+                  - generic: "\"Learn Java Design Patterns for Test Framework\" course"
+                - generic:
+                  - img
+                  - generic: "\"SDET/QA Automation Interview Kit + Java Logic Programs\" course"
+              - generic:
+                - link:
+                  - /url: https://courses.rahulshettyacademy.com/sign_up
+                  - text: JOIN NOW - FREE ACCESS
+                - paragraph:
+                  - img
+                  - text: Limited time offer - Usually $197, now FREE!
+      - generic:
+        - generic:
+          - generic:
+            - heading [level=2]: Frequently Asked Questions
+            - paragraph: Find answers to common questions about our platform and courses
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - heading [level=3]:
+                    - button:
+                      - generic: What does Rahul Shetty Academy offer?
+                      - img
+                - generic:
+                  - heading [level=3]:
+                    - button:
+                      - generic: Who is Rahul Shetty?
+                      - img
+                - generic:
+                  - heading [level=3]:
+                    - button:
+                      - generic: Are these courses good for beginners?
+                      - img
+                - generic:
+                  - heading [level=3]:
+                    - button:
+                      - generic: Do I get certificates after completing courses?
+                      - img
+                - generic:
+                  - heading [level=3]:
+                    - button:
+                      - generic: How do I enroll in a course?
+                      - img
+                - generic:
+                  - heading [level=3]:
+                    - button:
+                      - generic: Is content available on mobile devices?
+                      - img
+                - generic:
+                  - heading [level=3]:
+                    - button:
+                      - generic: What topics are covered?
+                      - img
+                - generic:
+                  - heading [level=3]:
+                    - button:
+                      - generic: Is there community support?
+                      - img
+      - contentinfo:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - heading [level=3]: RAHUL SHETTY
+                - paragraph: Transforming careers through comprehensive QA testing education. Join 1M+ learners worldwide.
+              - generic:
+                - heading [level=4]: Connect us on Socials
+                - generic:
+                  - link:
+                    - /url: https://www.youtube.com/channel/UCgx5SDcUQWCQ_1CNneQzCRw
+                    - img
+                  - link:
+                    - /url: https://www.linkedin.com/in/rahul-shetty-venkatesh/
+                    - img
+                  - link:
+                    - /url: https://www.instagram.com/rahulshettyofficial_venkat/
+                    - img
+            - generic:
+              - heading [level=4]: Navigation
+              - generic:
+                - link:
+                  - /url: /all-access-subscription
+                  - text: All-Access
+                - link:
+                  - /url: /learning-paths
+                  - text: Learning Paths
+                - link:
+                  - /url: /mentorship
+                  - text: Mentorship
+                - link:
+                  - /url: /ai-learning-path
+                  - text: AI Learning PathNEW
+                - link:
+                  - /url: /practice
+                  - text: Practice
+                - link:
+                  - /url: https://qasummit.org
+                  - text: Meet ups
+                - link:
+                  - /url: https://rahulshettyacademy.com/blog/
+                  - text: Blog
+            - generic:
+              - heading [level=4]: Popular Courses
+              - generic:
+                - link:
+                  - /url: https://courses.rahulshettyacademy.com/p/selenium-webdriver-interview-questions-tutorial-1
+                  - text: Selenium WebDriver
+                - link:
+                  - /url: https://courses.rahulshettyacademy.com/p/playwright-js-ts-automation-testing-from-scratch-framework
+                  - text: Playwright Testing
+                - link:
+                  - /url: https://courses.rahulshettyacademy.com/p/rest-api-automation-rest-assured-java
+                  - text: API Testing
+                - link:
+                  - /url: https://courses.rahulshettyacademy.com/p/learn-agentic-ai-build-multi-agent-automation-workflow
+                  - text: AI Agents
+                - link:
+                  - /url: https://courses.rahulshettyacademy.com/p/learn-generativen-ai-in-software-testing
+                  - text: AI Testing Tools
+                - link:
+                  - /url: https://courses.rahulshettyacademy.com/courses
+                  - text: Browse All Courses
+            - generic:
+              - heading [level=4]: Support
+              - generic:
+                - link:
+                  - /url: https://courses.rahulshettyacademy.com/sign_in
+                  - text: Student Login
+                - link:
+                  - /url: /contact-us
+                  - text: Contact Us
+                - link:
+                  - /url: "#"
+                  - text: Help Center
+                - link:
+                  - /url: "#"
+                  - text: Community
+                - link:
+                  - /url: "#"
+                  - text: Terms of Service
+                - link:
+                  - /url: "#"
+                  - text: Privacy Policy
+          - generic:
+            - generic:
+              - generic:
+                - paragraph: © 2025 Rahul Shetty Academy. All rights reserved.
+                - generic: •
+                - generic:
+                  - generic: Built with ♥ for testers worldwide.
+              - generic:
+                - generic: contact@rahulshettyacademy.com
+                - generic:
+                  - img
+                  - generic: Trusted by 1M+ QA Engineers
+  - dialog "The IT Recruitment System is Broken." [ref=e2]:
+    - generic [ref=e3]:
+      - heading "The IT Recruitment System is Broken." [level=2] [ref=e4]
+      - paragraph [ref=e5]: Shortlisting shouldn't depend on luck — it should depend on real skills.
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - paragraph [ref=e8]: 🚀 I'm building TechSmartHire — a skill-driven hiring platform that connects genuine talent directly with recruiters, without resume noise.
+        - paragraph [ref=e9]: Be among the early insiders.
+        - paragraph [ref=e10]: Get exclusive beta access, help shape the product, and be the first to benefit when we go LIVE.
+      - link "👉🏽 Checkout TechSmartHire & Join the Early Beta" [ref=e11] [cursor=pointer]:
+        - /url: https://techsmarthire.com
+    - button "Close" [active] [ref=e12] [cursor=pointer]:
+      - img [ref=e13]
+      - generic [ref=e16]: Close
+```

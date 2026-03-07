@@ -1,0 +1,49 @@
+{
+    "TC01": {
+        "firstname": "QA1",
+        "lastname": "Academy",
+        "email": "qaacademyajay+3gmail.com",
+        "mobile": "4375867364",
+        "occupation": "Student",
+        "gender": "male",
+        "password": "Password123"
+    },
+    "TC02": [
+        {
+            "firstname": "QA1",
+            "lastname": "Academy",
+            "email": "qaacademyajay+3gmail.com",
+            "mobile": "4375867364",
+            "occupation": "Student",
+            "gender": "male",
+            "password": "Password123"
+        },
+        {
+            "firstname": "QA2",
+            "lastname": "Academy",
+            "email": "qaacademyajay+4gmail.com",
+            "mobile": "4375867364",
+            "occupation": "Student",
+            "gender": "male",
+            "password": "Password123"
+        },
+        {
+            "firstname": "QA3",
+            "lastname": "Academy",
+            "email": "qaacademyajay+5gmail.com",
+            "mobile": "4375867364",
+            "occupation": "Student",
+            "gender": "male",
+            "password": "Password123"
+        }
+    ],
+    "TC03": {
+        "firstname": "QA3",
+        "lastname": "Academy",
+        "email": "qaacademyajay+2gmail.com",
+        "mobile": "4375867364",
+        "occupation": "Student",
+        "gender": "male",
+        "password": "Password123"
+    }
+}

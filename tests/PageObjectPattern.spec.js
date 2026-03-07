@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 
-import { PageObjectManager } from '../pageobject/PageObjectManager';
+import { PageObjectManager } from '../pages/PageObjectManager';
 
 import testdata from '../testdata/testdata.json'
 // import { LoginPage } from "../pageobject/LoginPage";
