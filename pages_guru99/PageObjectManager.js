@@ -1,6 +1,6 @@
-import { LoginPage } from '../guru99_pages/LoginPage';
-import { Homepage } from '../guru99_pages/HomePage';
-import { NewCustPage } from '../guru99_pages/NewCustPage';
+import { LoginPage } from '../pages_guru99/LoginPage';
+import { Homepage } from '../pages_guru99/HomePage';
+import { NewCustPage } from '../pages_guru99/NewCustPage';
 
 class PageObjectManager {
 

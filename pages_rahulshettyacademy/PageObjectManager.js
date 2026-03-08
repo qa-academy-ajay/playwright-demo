@@ -1,9 +1,9 @@
-import { LoginPage } from '../pages/LoginPage';
-import { DashboardPage } from '../pages/DashboardPage';
-import { CartPage } from '../pages/CartPage';
-import { CheckoutPage } from '../pages/CheckoutPage';
-import { ConfirmationPage } from '../pages/ConfirmationPage';
-import { OrderHistoryPage } from '../pages/OrderHistoryPage';
+import { LoginPage } from '../pages_rahulshettyacademy/LoginPage';
+import { DashboardPage } from '../pages_rahulshettyacademy/DashboardPage';
+import { CartPage } from '../pages_rahulshettyacademy/CartPage';
+import { CheckoutPage } from '../pages_rahulshettyacademy/CheckoutPage';
+import { ConfirmationPage } from '../pages_rahulshettyacademy/ConfirmationPage';
+import { OrderHistoryPage } from '../pages_rahulshettyacademy/OrderHistoryPage';
 
 class PageObjectManager {
 
